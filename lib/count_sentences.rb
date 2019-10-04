@@ -28,7 +28,7 @@ class String
 
   def count_sentences
     word_array = [] #empty array to post_via_redirect
-    sentences = self.split("/[?.!]/").size 
+    sentences = self.split(/[?.!]/).size 
     binding.pry 
     puts "#{sentences}"
   end
